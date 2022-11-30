@@ -1,0 +1,207 @@
+
+.grid-h{
+    color: transparent;
+}
+
+.grid-h.visible{
+    color: rgb(0, 0, 0);
+    margin-top: 1vh;
+    font-size: 70%;
+}
+
+.grid-p{
+    color: transparent;
+}
+
+.grid-p.visible{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 0.5vh;
+    font-size: 60%;
+    text-align: left;
+}
+
+.background{
+    padding-top: 1vw;
+    background-color: rgb(29, 39, 51);
+    background-image: url(./img/recycle2.png);
+    background-size: 30vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition-duration: 1.5s;
+}
+
+.background.lift-up{
+    transform: translateY(-81%);
+    transition-duration: 2s;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.col1,.col2,.col3,.col4,.col5,.col6{
+    padding: 0vw;
+    margin: 50px 0px 60px 0px;
+    border-radius: 10px;
+    background-color: transparent;
+    opacity: 70%;
+    font-size: 3vh;
+    transition-duration: 0.5s;
+    border: rgb(115, 167, 226) solid 10px;
+    width: 15vw;
+    height: 30vh;
+    box-shadow: 7px 7px rgb(94, 136, 184);
+}
+
+.col1.size-up,.col2.size-up,.col3.size-up,.col4.size-up,.col5.size-up,.col6.size-up{
+    width: 20vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 100%;
+    box-shadow: 7px 7px rgb(94, 136, 184);
+}
+.col1:hover,.col2:hover,.col3:hover,.col4:hover,.col5:hover,.col6:hover{
+    cursor: pointer;
+    border: rgb(255, 255, 255) solid 10px;
+    box-shadow: 7px 7px rgb(218, 218, 218);
+}
+
+.img{
+    transition-duration: 0.5s;
+}
+.img:hover{
+    pointer-events: auto;
+    width: 80%;
+}
+
+.img.play.size:hover{
+    pointer-events: none;
+}
+
+.img.play.size{
+    width:35%;
+}
+
+
+.uc-btn{
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    text-shadow: 0.05vw 0.05vw #2D63A7;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:576px) {
+    .col1,.col2,.col3,.col4,.col5,.col6{
+        font-size: 3vh;
+        width: 60vw;
+        height: 30vh;
+    }
+    .col1.size-up,.col2.size-up,.col3.size-up,.col4.size-up,.col5.size-up,.col6.size-up{
+        width: 80vw;
+        height: 40vh;
+    }
+    .img{
+        width: 70%;
+    }
+    .uc-btn{
+       font-size: 4vw;
+    }
+    .background.lift-up{
+        transform: translateY(-18%);
+    }
+}
+
+
+/* 패드 */
+@media screen and (min-width:577px) and (max-width:1199px) {
+    .col1,.col2,.col3,.col4,.col5,.col6{
+        font-size: 3.5vh;
+        width: 50vw;
+        height: 35vh;
+    }
+    .col1.size-up,.col2.size-up,.col3.size-up,.col4.size-up,.col5.size-up,.col6.size-up{
+        width: 65vw;
+        height: 45vh;
+    }
+    .img{
+        width: 50%;
+    }
+    .uc-btn{
+        font-size: 3vw;
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1200px) and (max-width:1599px) {
+    .col1,.col2,.col3,.col4,.col5,.col6{
+        font-size: 2.5vh;
+        width: 20vw;
+        height: 25vh;
+    }
+    .col1.size-up,.col2.size-up,.col3.size-up,.col4.size-up,.col5.size-up,.col6.size-up{
+        width: 25vw;
+        height: 35vh;
+    }
+    .img{
+        width: 50%;
+    }
+    .uc-btn:hover{
+        background-color: gray;
+        border:1px solid gray;
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1600px) and (max-width:1919px) {
+    .col1,.col2,.col3,.col4,.col5,.col6{
+        font-size: 3vh;
+        width: 20vw;
+        height: 30vh;
+    }
+    .col1.size-up,.col2.size-up,.col3.size-up,.col4.size-up,.col5.size-up,.col6.size-up{
+        width: 25vw;
+        height: 40vh;
+    }
+    .background.lift-up{
+        transform: translateY(-83%);
+    }
+
+    .img{
+        width: 50%;
+    }
+    .uc-btn:hover{
+        background-color: gray;
+        border:1px solid gray;
+    }
+}
+@media screen and (min-width:1920px) {
+    .uc-btn:hover{
+        background-color: gray;
+        border:1px solid gray;
+    }
+}
+
+/* 모바일 핸드폰 기기 및 패드 */
+@media screen and (min-width:577px) and (max-width:840px) {
+    .background.lift-up{
+        transform: translateY(-17%);
+    }
+}
+/* 패드 */
+@media screen and (min-width:841px) and (max-width:1050px){
+    .background.lift-up{
+        transform: translateY(-23%);
+    }
+}
+/* 패드 */
+@media screen and (min-width:1051px) and (max-width:1199px) {
+    .background.lift-up{
+        transform: translateY(-30%);
+    }
+}

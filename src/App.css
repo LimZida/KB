@@ -1,0 +1,52 @@
+.App {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  background-image: url(./img/process2.PNG);
+  background-position-y: 47.5%;
+  background-position-x: 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  font-family: NotoSans-Medium;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("./fonts/NotoSansKR-Medium.otf");
+}
+
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:576px) {
+  .App {
+    background-position-y: 66%;
+    background-size: 110%;
+  }
+}
+/* 패드 */
+@media screen and (min-width:577px) and (max-width:840px) {
+  .App {
+    background-position-y: 63%;
+    background-size: 100%;
+  }
+}
+/* 패드 */
+@media screen and (min-width:841px) and (max-width:1050px) {
+  .App {
+    background-position-y: 61%;
+    background-size: 100%;
+  }
+}
+/* 패드 */
+@media screen and (min-width:1051px) and (max-width:1199px) {
+  .App {
+    background-position-y: 57%;
+    background-size: 100%;
+  }
+}

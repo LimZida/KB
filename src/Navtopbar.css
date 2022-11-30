@@ -1,0 +1,37 @@
+.margin{
+    margin: 0px;
+    position: fixed;
+	top: 0px;
+	left: 0px;
+    width: 100%;
+    z-index: 3;
+    transition-duration: 0.5s;
+}
+.shadow{
+    box-shadow: 50px 50px 50px #bfbfbf;
+}
+
+.nav-lift-up{
+    transition-property: transform;
+    transform: translateY(-100%);
+    transition-duration: 1.0s;
+}
+
+.font{
+    font-size:2vh;
+}
+.middle{
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px #2D63A7;
+}
+
+/* 모바일 핸드폰 기기 및 패드 */
+@media screen and (max-width:1024px) {
+    .middle{
+        font-size: 2.25vh;
+        text-shadow: 0.07vw 0.07vw #2D63A7;
+    }
+}

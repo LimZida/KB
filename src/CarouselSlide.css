@@ -1,0 +1,49 @@
+.carousel-indicators{
+    position:absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    padding:0;
+    margin-right:15%;
+    margin-bottom:1rem;
+    margin-left:15%;
+    list-style:none;
+    width: 70vw;
+    }
+
+.caption-font{
+    padding: 30px;
+    border: 11px solid rgb(255, 255, 255);
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:577px){
+    .Carousel-img img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .caption-font{
+        padding: 15px;
+        border: 5px solid rgb(255, 255, 255);
+        font-size: 1.4vh;
+    }
+}
+/* 패드 */
+@media screen and (min-width:578px) and (max-width:1024px){
+    .Carousel-img img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .caption-font{
+        padding: 15px;
+        border: 5px solid rgb(255, 255, 255);
+        font-size: 2.5vh;
+    }
+}

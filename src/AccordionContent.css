@@ -1,0 +1,157 @@
+
+.acc-border{
+    border: 3px solid rgb(255, 255, 255);
+    opacity: 100%;
+    transition-duration: 0.5s;
+}
+
+.acc-border:hover{
+    opacity: 100%;
+    border: 3px solid rgb(115, 167, 226);
+}
+
+
+.acc-header{
+    padding: 10px;
+    display: block;
+    font-size: 3vh;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 0.06vw 0.06vw #2D63A7;
+}
+
+.acc-body{
+    background: transparent;
+    font-size: 3vh;
+    transform: translateX(100%);
+}
+
+.acc-body a{
+    text-decoration: none;
+    color: black;
+}
+
+.a-margin{
+    margin: 10px 0px 10px 0px;
+}
+
+.acc-body a:hover{
+    color: rgb(147, 180, 218);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: rgb(210, 231, 255);
+}
+
+.accordion-button::after{
+    margin-left: 0px;
+}
+
+.accordion-collapse.collapse.show{
+    transition-duration: 1s;
+    transform: translateX(-98.7%);
+}
+
+.list{
+    cursor: pointer;
+}
+
+.list-item{
+    transition-duration: 0.5s;
+    border: 1px solid gray;
+}
+
+.list-item:hover{
+    background-color: rgb(210, 231, 255);
+}
+
+.list-item.check{
+    opacity: 70%;
+    color: rgb(129, 129, 129);
+    background-image: url(./img/check.png);
+    background-size: 2vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:576px){
+    .acc-header{
+        font-size: 2vh;
+    }
+
+    .acc-body{
+        font-size: 2vh;
+        transform: translateX(105%);
+    }
+
+    .accordion-collapse.collapse.show{
+        transform: translateX(-98.8%);
+    }
+
+}
+
+/* 패드 */
+@media screen and (min-width:577px) and (max-width:768px){
+    .acc-header{
+        font-size: 2.5vh;
+    }
+
+    .acc-body{
+        font-size: 2.5vh;
+    }
+
+    .accordion-collapse.collapse.show{
+        transition-duration: 1s;
+        transform: translateX(-96.8%);
+    }
+
+}
+
+/* 패드 */
+@media screen and (min-width:769px) and (max-width:1024px){
+    .acc-header{
+        font-size: 2.5vh;
+    }
+
+    .acc-body{
+        font-size: 2.5vh;
+        transform: translateX(105%);
+    }
+
+    .accordion-collapse.collapse.show{
+        transition-duration: 1s;
+        transform: translateX(-102.5%);
+    }
+
+}
+/* 패드 및 데스크탑 */
+@media screen and (min-width:1025px) and (max-width:1600px){
+    .acc-header{
+        font-size: 2vh;
+    }
+    .acc-body{
+        font-size: 2vh;
+        transform: translateX(100%);
+    }
+
+    .accordion-collapse.collapse.show{
+        transform: translateX(-98.5%);
+    }
+
+}
+/* 데스크탑 */
+@media screen and (min-width:1601px) and (max-width:1919px){
+    .acc-header{
+        font-size: 2.5vh;
+    }
+    .acc-body{
+        font-size: 2vh;
+        transform: translateX(100%);
+    }
+
+    .accordion-collapse.collapse.show{
+        transform: translateX(-98.5%);
+    }
+}

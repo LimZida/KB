@@ -1,0 +1,60 @@
+#rmt-scroll{
+    box-shadow: 2px 2px 6px 0px rgb(134, 134, 134);
+    border-radius: 20px;
+    position:fixed;
+    top: 45%;
+    right: 2vw;
+    width: 3%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+#rmt-scroll.rmt-visible{
+    transition-duration: 1;
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+#rmt-scroll img{
+    margin: 1vh auto 1vh auto;
+    width: 80%;
+    border: rgb(66, 66, 66) solid 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:576px){
+    #rmt-scroll{
+        width: 10%;
+    }
+}
+/* 패드 */
+@media screen and (min-width:577px) and (max-width:1199px){
+    #rmt-scroll{
+        width: 7%;
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1200px) and (max-width:1599px){
+    #rmt-scroll{
+        width: 4%;
+    }
+    #rmt-scroll img:hover{
+        border: 3px solid white;
+        background-color: rgb(141, 141, 141);
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1600px){
+    #rmt-scroll img:hover{
+        border: 3px solid white;
+        background-color: rgb(141, 141, 141);
+    }
+}
