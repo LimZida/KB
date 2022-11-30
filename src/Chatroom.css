@@ -1,0 +1,195 @@
+.Chatroom-container{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    z-index: 3;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.Chatroom{
+    background-color: rgb(210, 230, 255);
+    border-radius: 10px;
+    width: 17vw;
+    height: 35vh;
+    border: 2px solid black;
+}
+
+.Typeroom{
+    background-color: rgb(214, 231, 255);
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 17vw;
+    height: 10vh;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+.input{
+    width:11vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8vw;
+    padding: 5px;
+}
+
+.input::placeholder{
+    font-size: 0.8vw;
+}
+
+.chat-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.right-display{
+    font-size: 1vw;
+    background-color: yellow;
+    float: right;
+    text-align: right;
+    border-radius: 8px 8px 0px 8px;
+    margin: 10px;
+    clear: both;
+    padding: 10px;
+    box-shadow: 5px 5px rgb(199, 199, 42);
+}
+
+.left-display{
+    font-size: 1vw;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    text-align: left;
+    border-radius: 8px 8px 8px 0px;
+    margin: 10px;
+    clear: both;
+    padding: 10px;
+    box-shadow: -5px 5px rgb(202, 196, 196);
+}
+/* 모바일 핸드폰 기기 */
+@media screen and (max-width:576px){
+    .Chatroom-container{
+        width: 90vw;
+        left: 15px;
+        bottom: 70px;
+    }
+    .Chatroom{
+        width: 80vw;
+    } 
+    .Typeroom{
+        width: 80vw;
+    }
+    .input{
+        width:50vw;
+        font-size: 4vw;
+    }
+    
+    .input::placeholder{
+        font-size: 3.5vw;
+    }
+    .right-display{
+        font-size: 4vw;
+    }
+
+    .left-display{
+        font-size: 4vw;
+    }
+    
+}
+/* 패드 */
+@media screen and (min-width:577px) and (max-width:1199px){
+    .Chatroom-container{
+        width: 50vw;
+        left: 20px;
+        bottom: 125px;
+    }
+    .Chatroom{
+        width: 45vw;
+    } 
+    .Typeroom{ 
+        width: 45vw;
+    }
+    .input{
+        width:30vw;
+        font-size: 3vw;
+    }
+    
+    .input::placeholder{
+        font-size: 2.1vw;
+    }
+    .right-display{
+        font-size: 3vw;
+    }
+
+    .left-display{
+        font-size: 3vw;
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1200px) and (max-width:1599px){
+    .Chatroom-container{
+        width: 35vw;
+        left: 20px;
+        bottom: 125px;
+    }
+    .Chatroom{
+        width: 31vw;
+    } 
+    .Typeroom{ 
+        width: 31vw;
+    }
+    .input{
+        width:20vw;
+        font-size: 2vw;
+    }
+    
+    .input::placeholder{
+        font-size: 1.45vw;
+    }
+    .right-display{
+        font-size: 2vw;
+    }
+
+    .left-display{
+        font-size: 2vw;
+    }
+}
+/* 데스크탑 */
+@media screen and (min-width:1600px) and (max-width:1919px){
+    .Chatroom-container{
+        width: 25vw;
+        left: 20px;
+        bottom: 125px;
+    }
+    .Chatroom{
+        width: 22vw;
+    } 
+    .Typeroom{ 
+        width: 22vw;
+    }
+    .input{
+        width: 16vw;
+        font-size: 1.15vw;
+    }
+    
+    .input::placeholder{
+        font-size: 1.15vw;
+    }
+    .right-display{
+        font-size: 1vw;
+    }
+
+    .left-display{
+        font-size: 1vw;
+    }
+}
